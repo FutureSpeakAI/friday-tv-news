@@ -44,6 +44,12 @@ public final class Contract {
     public static final String M_CONTRACT = "contract";
     /** Enabled add-ons: kids mode, grown-up unlocked, reduce motion, the place for weather. */
     public static final String M_STATE = "state";
+    /**
+     * Enabled add-ons: which service does each job with the keys on this TV, so the add-on can
+     * pick its fallback (the TV's voice, still pictures). {@link #K_PLAN}: text, voice, sound,
+     * music, images and video, each a provider name or "tv" / "stills" / "none". Never a key.
+     */
+    public static final String M_CAPABILITIES = "capabilities";
     /** Enabled add-ons: Friday's voice for a short text, as 22.05 kHz 16-bit mono PCM on a pipe, or nothing. */
     public static final String M_VOICE = "voice";
     /** Enabled add-ons: open Friday with a question already asked (arg = the question, {@link #K_LABEL} = what the screen shows). */
@@ -76,6 +82,7 @@ public final class Contract {
     public static final String K_RELATED = "related";        // JSON array of {title, source, link, summary}
     public static final String K_OK = "ok";
     public static final String K_WHY = "why";
+    public static final String K_PLAN = "plan";              // Bundle of job -> provider (see M_CAPABILITIES)
 
     /** Longest text {@link #M_VOICE} speaks in one call. */
     public static final int MAX_VOICE_CHARS = 1500;

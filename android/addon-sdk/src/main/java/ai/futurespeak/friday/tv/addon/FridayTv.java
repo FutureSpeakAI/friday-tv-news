@@ -82,6 +82,21 @@ public final class FridayTv {
         return s;
     }
 
+    /**
+     * What each job will use on this TV: job ("text", "voice", "sound", "music", "images", "video")
+     * to a provider name, or the fallback ("tv" voice, "stills" pictures, "none"). Without Friday,
+     * or before this add-on is enabled, everything is the fallback: plan for that first.
+     */
+    public static java.util.Map<String, String> capabilities(Context c) {
+        java.util.Map<String, String> out = new java.util.LinkedHashMap<>();
+        out.put("text", "none"); out.put("voice", "tv"); out.put("sound", "none"); out.put("music", "none");
+        out.put("images", "stills"); out.put("video", "stills");
+        Bundle b = call(c, Contract.M_CAPABILITIES, null, null);
+        Bundle plan = b == null ? null : b.getBundle(Contract.K_PLAN);
+        if (plan != null) for (String k : out.keySet().toArray(new String[0])) { String v = plan.getString(k); if (v != null) out.put(k, v); }
+        return out;
+    }
+
     /** The last state read, or null. */
     public static State cached() { return cached; }
 

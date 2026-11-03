@@ -37,6 +37,17 @@ jobs:
           name: test-reports
           path: android/*/build/reports/tests/
 
+  publish-guard:
+    name: Publish guard (no household content, every asset accounted for)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/publish_guard.py
+      - run: python -m unittest discover -s scripts/tests -v
+
   secrets:
     name: Secret scan
     runs-on: ubuntu-latest

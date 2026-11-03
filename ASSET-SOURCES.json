@@ -1,0 +1,68 @@
+{
+ "about": "Every picture, sound, font, library and other binary in this repository, with where it came from. scripts/publish_guard.py checks this list on every push.",
+ "assets": [
+  {
+   "path": "android/addon-sdk/src/main/res/font/inter.ttf",
+   "sha256": "ddf3bac28b1adb68c6702753b891b29ae570dabe40563a36bd633cf49d9f4200",
+   "origin": "Inter font, from its official release",
+   "license": "SIL Open Font License 1.1",
+   "generated_for_household": false
+  },
+  {
+   "path": "android/addon-sdk/src/main/res/font/jetbrains_mono.ttf",
+   "sha256": "ce4e68ed840528b5a0e51b41926c653110738a745fbe3eb9049f8fc555fb9513",
+   "origin": "JetBrains Mono font, from its official release",
+   "license": "SIL Open Font License 1.1",
+   "generated_for_household": false
+  },
+  {
+   "path": "android/addon-sdk/src/main/res/font/orbitron.ttf",
+   "sha256": "c23064b416b7106be791003249e4c1ef3c351df030039fa120a01580880e164e",
+   "origin": "Orbitron font, from its official release",
+   "license": "SIL Open Font License 1.1",
+   "generated_for_household": false
+  },
+  {
+   "path": "android/gradle/wrapper/gradle-wrapper.jar",
+   "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
+   "origin": "Gradle wrapper, from the Gradle 8.11.1 distribution",
+   "license": "Apache-2.0",
+   "generated_for_household": false
+  },
+  {
+   "path": "android/news/src/main/res/mipmap-hdpi/ic_launcher.png",
+   "sha256": "f519958ffd607fa3e2bdfda11cd1e5e0433204328e299bbfc4c2cb1ab3128f17",
+   "origin": "Agent Friday / FutureSpeak brand icon",
+   "license": "MIT (the FutureSpeak mark is a trademark)",
+   "generated_for_household": false
+  },
+  {
+   "path": "android/news/src/main/res/mipmap-mdpi/ic_launcher.png",
+   "sha256": "377b0f38b314c9f2c6fdbf1f8cee4b0d07ea69fcc3e168180b4583d91a9d0f7f",
+   "origin": "Agent Friday / FutureSpeak brand icon",
+   "license": "MIT (the FutureSpeak mark is a trademark)",
+   "generated_for_household": false
+  },
+  {
+   "path": "android/news/src/main/res/mipmap-xhdpi/ic_launcher.png",
+   "sha256": "4cbe51f71d893ca69b39d211fbe9b5c2a0f2c9bdbd353b3717992e44ee3d9a2f",
+   "origin": "Agent Friday / FutureSpeak brand icon",
+   "license": "MIT (the FutureSpeak mark is a trademark)",
+   "generated_for_household": false
+  },
+  {
+   "path": "android/news/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+   "sha256": "381d97f70afa370c4c1880957d7166f4fb5dbdfc7b653f56c76ba398e33ebc7b",
+   "origin": "Agent Friday / FutureSpeak brand icon",
+   "license": "MIT (the FutureSpeak mark is a trademark)",
+   "generated_for_household": false
+  },
+  {
+   "path": "android/news/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+   "sha256": "42518797ce92b7dd967ef3a5472feff8a3caaa4e3f9134ef68baf5c9f318b55c",
+   "origin": "Agent Friday / FutureSpeak brand icon",
+   "license": "MIT (the FutureSpeak mark is a trademark)",
+   "generated_for_household": false
+  }
+ ]
+}
