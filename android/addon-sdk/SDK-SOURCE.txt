@@ -1,0 +1,4 @@
+Copied from https://github.com/FutureSpeakAI/agent-friday-tv, android/addon-sdk
+Add-on contract version: 1
+Refresh with: python scripts/sync_sdk.py <path to agent-friday-tv>
+Do not edit here; change the SDK upstream and copy it back.

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+
+    <application
+        android:name=".NewsApp"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:usesCleartextTraffic="false"
+        android:theme="@style/FridayTheme">
+
+        <!-- The Friday TV add-on entry (contract v1). No launcher entry: News opens from Friday's rail or by voice. -->
+        <activity
+            android:name=".NewsActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|screenLayout|smallestScreenSize|uiMode|density"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="ai.futurespeak.friday.tv.addon.OPEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="ai.futurespeak.friday.tv.addon" android:resource="@xml/friday_addon" />
+        </activity>
+
+        <!-- Friday asks here whether a spoken request is News's; only Friday gets an answer. -->
+        <provider
+            android:name=".NewsAddonProvider"
+            android:authorities="ai.futurespeak.friday.tv.news.friday"
+            android:exported="true" />
+    </application>
+</manifest>

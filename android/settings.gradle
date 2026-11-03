@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories { google(); mavenCentral(); gradlePluginPortal() }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories { google(); mavenCentral() }
+}
+rootProject.name = 'friday-tv-news'
+// addon-sdk/ is a copy of agent-friday-tv's android/addon-sdk at contract v1 (see addon-sdk/SDK-SOURCE.txt).
+include ':addon-sdk', ':news'

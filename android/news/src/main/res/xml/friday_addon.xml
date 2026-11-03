@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This app's Friday TV add-on declaration (contract v1, docs/ADDON-CONTRACT.md in agent-friday-tv).
+     kids="true": News has its own kids filter, but it still appears in kids mode only after a grown-up marks it OK. -->
+<friday-addon
+    contract="1"
+    id="news"
+    title="News"
+    icon="📰"
+    kids="true"
+    triggers="news headlines stories morning briefing brief" />
