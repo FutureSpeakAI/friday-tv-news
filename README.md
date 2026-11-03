@@ -15,7 +15,7 @@ adb install -r friday-tv-news.apk
 adb shell content call --uri content://ai.futurespeak.friday.tv.keys --method addon --arg enable:ai.futurespeak.friday.tv.news
 ```
 
-Or switch it on from the TV: *Agent Friday > Settings > Family > Friday News (add-on): on* (needs the grown-up PIN).
+Or switch it on from the TV: *Agent Friday > Settings > Family & PIN > Friday News (add-on): on* (needs the grown-up PIN).
 
 **Kids mode:** News has its own kids filter, but it appears in kids mode only after a grown-up switches on *Friday News: OK for kids* in the same place.
 
