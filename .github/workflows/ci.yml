@@ -25,13 +25,13 @@ jobs:
       - name: Release builds (debug-signed in CI; no keystore here)
         working-directory: android
         run: ./gradlew --no-daemon assembleRelease
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: apks
           path: |
             android/news/build/outputs/apk/release/*.apk
           retention-days: 14
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: test-reports
